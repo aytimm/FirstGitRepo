@@ -1,0 +1,93 @@
+<!DOCTYPE html>   <!--Specifying HTML 5-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Bootstrap Page</title>
+
+  <!-- The viewport is the visible area of a page. Pages may be wider
+  than the screen or browser window; and pages are often longer than
+  the browser window. This tag sets the width of the page equal to the
+  width of the browser window. The height stays the same. -->
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+
+  <!-- Include Bootstrap. This downloads Bootstrap from a CDN. You can
+   also host Bootstrap on your server, but it's usually faster for the
+   user for their browser to fetch it from a CDN. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Nav components, and dropdowns, need Bootstrap's JavaScript to do anything.
+  And JavaScript requires JQuery, so include that too -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Bootstrap will identify this contain class div tag as a top-level
+ container and apply styles to the tags within. Put your Bootstrap elements
+ inside this class=container div element -->
+
+<div class="container">
+
+  <div class="jumbotron">
+    <h1>I'm a really important part of the page!</h1>
+    <P>Important message here</p>
+
+
+<p><span class="glyphicon glyphicon-star"> Favorites</span>
+  <p><span class="glyphicon glyphicon-search"> Search</span>
+    <p><span class="glyphicon glyphicon-ok"> Save</span>
+
+
+  <h3>Bootstrap Buttons</h3>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-danger"> STOP!</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="caret"></span>
+<span class="sr-only">Toggle Dropdown</span>
+  </button>
+</div>
+<br><br>
+
+  <P>Select an option from the dropdown menu to view associated page.</P>
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="animaldropdown" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">
+
+      More About Pet Birds      <!--The dropdown menu text -->
+      <span class="caret"></span>   <!-- Add this for the down arrow icon -->
+
+    </button>
+
+    <ul class="dropdown-menu" aria-labelledby="petbirddropdown">
+      <li><a href="http://www.allpetbirds.com/">Popular Pet Birds</a></li>
+      <li><a href="https://www.animalhumanesociety.org/adoption">Adopt a Bird</a></li>
+      <li><a href="http://www.aav.org/search/custom.asp?id=1803">Find an Avian Vet</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="flamingos-1.jpg">
+    </div>
+
+    <div class="col-sm-6>
+      <h2>A list of programming languages</h2>
+      <ul>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Swift</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+
+</div>  <!-- End of Bootstrap container -->
+
+</body>
+</html>
