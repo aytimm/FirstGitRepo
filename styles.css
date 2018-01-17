@@ -1,6 +1,10 @@
 .jumbotron{
-  background:url('5448483535_c7449bf700_b.jpg');
-  color:#29506D;
-  font-style: italic;
-  text-shadow 2px 2px black;
+  background:url('parrot-2459285_960_720.jpg');
+  color:yellow;
+  font-style: bold;
+}
+
+.row{
+color: white;
+font-style: bold;
 }
